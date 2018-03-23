@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk add --update python3 py3-pip git tcpdump
 
-RUN git clone https://github.com/649/Memcrashed-DDoS-Exploit.git Memcrashed
+RUN git clone https://github.com/trickster07/12.git Memcrashed
 WORKDIR Memcrashed
 # COPY requirements.txt .
 # COPY api.txt .
