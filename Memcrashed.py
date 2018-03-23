@@ -60,7 +60,7 @@ while True:
         if query.startswith('y'):
             print('')
             print('[~] Checking Shodan.io API Key: %s' % SHODAN_API_KEY)
-            results = api.search('product:"Memcached" port:11211')
+            results = api.search('product:"Memcached" port:11211 -has_ipv6:true')
             print('[✓] API Key Authentication: SUCCESS')
             print('[~] Number of bots: %s' % results['total'])
             print('')
